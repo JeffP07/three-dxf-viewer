@@ -80,6 +80,7 @@ export class DXFViewer {
 
 			this._lastDXF = data;
 
+			console.log(data.tables.layers);
 			//parse layers
 			data.tables.layers = this.LayerHelper.parse( data.tables.layers );
 
